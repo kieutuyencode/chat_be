@@ -1,0 +1,21 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=secret
+      - POSTGRES_DB=chat_be
+    ports:
+      - "5434:5432"
+    volumes:
+      - data-volume:/var/lib/postgresql/data
+  chatbe:
+    image: chatbe
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 3000:3000
+
+volumes:
+  data-volume:
