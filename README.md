@@ -181,7 +181,6 @@ chat_be/
 ### API conventions
 
 - Base path: `/api/v1`
-- Protected routes require `Authorization: Bearer <accessToken>`
 - Global error handler and CORS (e.g. allow all in dev)
 - WebSocket endpoint: `/websocket/v1` (SignalR)
 
