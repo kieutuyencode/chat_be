@@ -1,6 +1,6 @@
 services:
-  chatbe:
-    image: chatbe
+  chat_backend:
+    image: chat_backend
     build:
       context: .
       dockerfile: ./Dockerfile

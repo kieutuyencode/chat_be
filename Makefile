@@ -5,7 +5,7 @@ SCHEMA_DIR = "ent://database/ent/schema"
 
 DEV_URL = "docker://postgres/15/test?search_path=public"
 
-DB_URL = "postgres://root:secret@localhost:5434/chat_be?search_path=public&sslmode=disable"
+DB_URL = "postgres://root:secret@localhost:5434/chat_backend?search_path=public&sslmode=disable"
 
 
 migrate_generate:

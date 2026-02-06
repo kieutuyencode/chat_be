@@ -4,13 +4,13 @@ services:
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=secret
-      - POSTGRES_DB=chat_be
+      - POSTGRES_DB=chat_backend
     ports:
       - "5434:5432"
     volumes:
       - data-volume:/var/lib/postgresql/data
-  chatbe:
-    image: chatbe
+  chat_backend:
+    image: chat_backend
     build:
       context: .
       dockerfile: ./Dockerfile

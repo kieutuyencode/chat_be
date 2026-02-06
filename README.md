@@ -41,7 +41,7 @@ A Go backend application for real-time chat, featuring email-based authenticatio
 
    ```bash
    git clone <repository-url>
-   cd chat_be
+   cd chat_backend
    ```
 
 2. **Install Go dependencies:**
@@ -57,7 +57,7 @@ A Go backend application for real-time chat, featuring email-based authenticatio
    ```env
    PORT=3000
 
-   DB_URL=postgres://root:secret@localhost:5434/chat_be?search_path=public&sslmode=disable
+   DB_URL=postgres://root:secret@localhost:5434/chat_backend?search_path=public&sslmode=disable
 
    JWT_ACCESS_TOKEN_SECRET_KEY=your_jwt_secret
    JWT_ACCESS_TOKEN_EXPIRES_IN=168h
@@ -127,7 +127,7 @@ Override `DB_URL` in the Makefile or environment when your PostgreSQL connection
 ## Project Structure
 
 ```
-chat_be/
+chat_backend/
 ├── cmd/
 │   └── server/
 │       └── server.go          # Application entrypoint (FX modules)
